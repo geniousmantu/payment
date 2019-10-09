@@ -73,6 +73,7 @@ public class PaymentServiceImpl implements PaymentService {
 
 	@Override
 	public List<Payment> getLastTenPayments() {
+		log.info("PaymentService  >> getLastTenPayments");
 		return paymentRepository.findTop10ByOrderByLastUpdateAsc();
 	}
 
