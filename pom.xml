@@ -6,7 +6,7 @@
 	<groupId>com.sapient</groupId>
 	<artifactId>payment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>payment</name>
 	<description>Spaient Bank Payment Department</description>
@@ -22,6 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<cucumber.version>4.0.0</cucumber.version>
 	</properties>
 
 	<dependencies>
@@ -77,6 +78,25 @@
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-test</artifactId>
 		    <scope>test</scope>
+		</dependency>
+		<!-- Cucumber Dependency -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-spring</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
 		</dependency>
 		
 	</dependencies>
